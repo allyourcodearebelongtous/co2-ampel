@@ -10,7 +10,7 @@
 #define CONFIG_H
 
 /******************************* Version **************************************/
-#define VERSION 4
+#define VERSION 7
 
 /******************************* MQTT **************************************/
 
@@ -38,7 +38,7 @@ enum Color {GREEN, YELLOW, RED, BLUE, DARK, WHITE, GREEN2, YELLOW2, RED2};
 #define SCD30_CALIBRATION_MIN_RUNTIME 180 //seconds
 #define SCD30_MEASUREMENT_INTERVAL 2 // seconds (recalibrate, if you change this value)
 #define SCD30_MIN_PPM 350
-#define SCD30_CALIBRATION_PPM 450 
+#define SCD30_CALIBRATION_PPM 450 // overriden by calibration_ppm from config.json 
 
 /******************************* thresholds **************************************/
 #define TH_GREEN 800 //overriden by th_green from config.json
@@ -85,8 +85,8 @@ enum Color {GREEN, YELLOW, RED, BLUE, DARK, WHITE, GREEN2, YELLOW2, RED2};
 // BUZZER
 #define GPIO_BUZZER 14
 #define BUZZER_ENABLED 1 //overriden by buzzer_enabled from config.json
-// BME280
-#define BMP_ENABLED 1
+// BM(E/P)280
+#define BMX_ENABLED 1 //overriden by bmx_enabled from config.json
 // self test
 #define SELFTEST_ENABLED 1 //overriden by selftest_enabled from config.json 
 #define SELFTEST_BUZZER 0 //overriden by selftest_buzzer from config.json 
@@ -123,7 +123,7 @@ enum Color {GREEN, YELLOW, RED, BLUE, DARK, WHITE, GREEN2, YELLOW2, RED2};
 #define GPIO_BUZZER 2
 #define BUZZER_ENABLED 1 //overriden by buzzer_enabled from config.json
 // BME280
-#define BMP_ENABLED 0
+#define BMX_ENABLED 0 //overriden by bmx_enabled from config.json
 // self test
 #define SELFTEST_ENABLED 1 //overriden by selftest_enabled from config.json
 #define SELFTEST_BUZZER 1 //overriden by selftest_buzzer from config.json 

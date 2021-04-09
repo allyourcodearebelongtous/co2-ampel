@@ -17,6 +17,8 @@
   "th_yellow_high": 1500,
   "th_red": 2000,
   "selftest_buzzer": 0,
-  "led_brightness": 128,
-  "version": "1"
+  "led_brightness": 150,
+  "calibration_ppm": 450,
+  "bmx_enabled": 1,
+  "version": "5"
 }
